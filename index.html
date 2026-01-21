@@ -1,44 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/bootstrap-5.3.8-dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="/assets/css/index.css">
         <link rel="icon" href="assets/icon.webp">
-        <script type="text/javascript" href="/assets/js/index.js"></script>
-        <script type="text/javascript" href="/bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
-        <script type="text/javascript" href="/assets/js/tex-mml-chtml.js"></script>
+        <script src="/assets/js/index.js" defer></script>
+        <script src="/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js" defer></script>
+        <script src="/assets/js/tex-mml-chtml.js" defer></script>
         <title>Integrating Integrals</title>
     </head>
     <body>
         <div class="nav">
-            <img src="assets/icon.webp" alt="Website Logo" style=" width: 200px">
-            <h1 style="display: inherit">YOUR MOMMMMMMM</h1>
+            <img src="assets/logo.png" alt="Website Logo" style=" width: 100px; margin: 1rem">
+            <h1 style="display: inherit; transform: translateY(10px)">Integrating Integrals</h1>
         </div>
         <nav class="navbar navbar-expand-md sticky-top">
             <div class="container-fluid">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ONE</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" role="button" aria-expanded="false">
+                            Integral basics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/basics/indefinites.html">Indefinite Integrals</a></li>
+                            <li><a class="dropdown-item" href="/basics/definites.html">Definite Integrals</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" role="button" aria-expanded="false">
+                            Methods of Solving
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/methods/general.html">Integration Rules</a></li>
+                            <li><a class="dropdown-item" href="/methods/usub.html">U-substitution</a></li>
+                            <li><a class="dropdown-item" href="/methods/byparts.html">Integration by Parts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" role="button" aria-expanded="false">
+                            Identities
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/identities/rationals.html">Rational Identities</a></li>
+                            <li><a class="dropdown-item" href="/identities/trig.html">Trigonometric Identities</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">TWO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">THREE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">FOUR</a>
+                        <a class="nav-link" href="moreinfo.html" id="more">
+                            More Resources
+                        </a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <main>
 
+        <main>
+            <section>
+                <br><br>
+                <h1>Welcome to Integrating Integrals!</h1>
+                <br>
+                <h5>We've got plent of resources for all you integrating needs!</h5>
+                <p>New or just not sure where to go? Start from the top!</p>
+                <a class="btn btn-custom" href="/basics/indefinites.html">Quick Start</a>
+            </section>
+            <hr class="w-75 divider-main">
+            <section>
+                <h1>Solving Those Pesky Integrals</h1>
+                <div class="container mt-5">
+                    <div class="row justify-content-center">
+                        <div class="col-md-3">
+                            <div class="click-box p-4" onclick="window.location.href='/methods/general.html'">
+                                <h5>Integration Rules</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="click-box p-4" onclick="window.location.href='/methods/usub.html'">
+                                <h5>U-Substitution</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="click-box p-4" onclick="window.location.href='/methods/byparts.html'">
+                                <h5>By Parts</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="w-75 divider-main">
+            <section>
+                <h1>Integral Identities</h1>
+                <h5>For reference of course</h5>
+                <img class="dealer" src="assets/identitiesdealer1.png" width="250px" style="margin-right: 1rem;">
+                <img class="dealer" src="assets/identitiesdealer2.png" width="250px">
+                <br>
+                <figure>
+                    <a href="/identities/rationals.html"><img src="/assets/file.png" width="200px"></a>
+                    <figcaption><h5>Rationals</h5></figcaption>
+                </figure>
+                <figure>
+                    <a href="/identities/trig.html"><img src="/assets/file.png" width="200px" style="margin-right: 1rem"></a>
+                    <figcaption><h5>Trigonometric</h5></figcaption>
+                </figure>
+            </section>
         </main>
         <footer>
-
+            <hr class="divider-footer">
+            <div class="container text-center">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-4">
+                        <img src="/assets/logo.png" height="75px">
+                        <h5 class="ps-3" style="display: inline-block;"><a href="https://github.com/Yeetmun/web-design-midterm" style="color: crimson; text-decoration-line: none;">Source Code</a></h5>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="/assets/icon.webp" width="100px">
+                    </div>
+                    <div class="col-md-5">
+                        <ul class="nav justify-content-center text-center" style="background-color: #D7E3FC">
+                            <li class="nav-item foot">Basics: <a href="/basics/indefinites.html">Indefinite</a> <a href="/basics/definites.html">Definite</a></li>
+                            <li class="nav-item foot">Methods: <a href="/methods/general.html">General</a> <a href="/methods/usub.html">U-sub</a> <a href="/methods/byparts.html">By Parts</a></li>
+                            <li class="nav-item foot">Identities: <a href="/identities/rationals.html">Rational</a> <a href="/identities/trig.html">Trig</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </footer>
     </body>
 </html>

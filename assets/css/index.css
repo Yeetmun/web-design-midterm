@@ -1,12 +1,19 @@
-:root {
-    overflow: none
-}
-
 body {
     color: black;
     text-align: center;
     background-color: cornflowerblue;
-    height: 4000px
+}
+
+main {
+    margin: auto;
+    width: 100%;
+    background-color: #D7E3FC;
+    text-align: center;
+}
+
+footer {
+    background-color: #D7E3FC;
+    padding-bottom: 3rem;
 }
 
 .nav {
@@ -23,13 +30,107 @@ body {
 
 .nav-item {
     font-size: 1.5rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
     padding-right: 2rem;
     padding-left: 2rem
 }
 
-.nav-item:hover {
+.nav-link {
+    font-weight: 400;
+    color: black;
+}
+
+.dropdown-menu a {
+    color: black;
+    font-weight: 500;
+}
+
+.dropdown-menu a:hover{
     color: black;
     background-color: darkorchid;
+}
+
+#more:hover {
+    color: black;
+    background-color: darkorchid;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+ul.dropdown-menu {
+    left: 2rem !important;
+    background-color: mediumorchid;
+    border: none;
+    border-radius: 0px;
+}
+
+.btn-custom {
+    border:2px solid var(--bs-primary);
+    color: black;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out
+}
+
+.btn-custom:hover {
+    border: 2px solid var(--bs-primary);
+    background-color: var(--bs-primary-border-subtle);
+    transform: scale(1.05);
+}
+
+.divider-main {
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    height: 3px;
+    color: mediumorchid;
+    border-color: mediumorchid;
+    border-top: 3px solid;
+    opacity: 1;
+}
+
+.divider-footer {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 3rem;
+    height: 2px;
+    color: darkorange;
+    border-color: darkorange;
+    border-top: 2px solid;
+    opacity: 1;
+}
+
+.click-box {
+    background-color: #a2c7fa;
+    border: 2px solid var(--bs-primary);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out
+}
+
+.click-box:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: #a2c7faaa;
+}
+
+.dealer {
+    border: 1px solid black;
+}
+
+figure {
+    display: inline-block;
+    transition: all 0.2s ease-in-out
+}
+
+figure:hover {
+    transform: scale(1.05);
+}
+
+.foot a {
+    text-decoration: none;
+    border-bottom: 1px dotted crimson;
+    color: crimson;
+    padding-right: 2px;
+    padding-left: 2px;
 }
