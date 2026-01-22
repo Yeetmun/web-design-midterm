@@ -16,6 +16,12 @@ footer {
     padding-bottom: 3rem;
 }
 
+article {
+    width: 50%;
+    margin: auto;
+    font-size: 18px;
+}
+
 .nav {
     text-align: center;
     background-color: lightblue;
@@ -146,6 +152,26 @@ figure:hover {
     color: crimson;
     padding-right: 2px;
     padding-left: 2px;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: 1px dotted crimson;
+    color: crimson;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+.attribute, .attribute a {
+    font-size: 14px;
+}
+
+.purple {
+    color: darkorange
+}
+
+.crimson {
+    color: green
 }
 
 .to-top {

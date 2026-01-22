@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/css/usub.css">
+        <link rel="icon" href="/assets/icon.webp">
+        <script src="/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js" defer></script>
+        <script src="/assets/js/tex-mml-chtml.js" defer></script>
+        <title>Integrating Integrals</title>
+    </head>
+    <body>
+        <div class="to-top" onclick="scrollTo({top:0,left:0,behavior:'smooth'})">
+            <a href="#">Back to top</a>
+        </div>
+        <div class="nav" onclick="window.location.href='/index.html'">
+            <img src="/assets/logo.png" alt="Website Logo" style=" width: 100px; margin: 1rem">
+            <h1 style="display: inherit; transform: translateY(10px)">Integrating Integrals</h1>
+        </div>
+        <nav class="navbar navbar-expand-md sticky-top">
+            <div class="container-fluid">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" role="button" aria-expanded="false">
+                            Integral basics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/basics/indefinites.html">Indefinite Integrals</a></li>
+                            <li><a class="dropdown-item" href="/basics/definites.html">Definite Integrals</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" role="button" aria-expanded="false">
+                            Methods of Solving
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/methods/general.html">Integration Rules</a></li>
+                            <li><a class="dropdown-item" href="/methods/usub.html">U-substitution</a></li>
+                            <li><a class="dropdown-item" href="/methods/byparts.html">Integration by Parts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/identities/identities.html" id="more">
+                            Identities
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/moreinfo.html" id="more">
+                            More Resources
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <br><br>
+            <h1>Solving Integrals with U-Substitution</h1>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/b76wePnIBdU?si=rxmmaC0yIt7ny1r_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="attribute">"<a href="https://www.youtube.com/watch?v=b76wePnIBdU">
+            _-substitution intro | AP Calculus AB | Khan Academy</a>" by <a href="https://www.khanacademy.org/">Khan Academy</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA</a></p>
+            <article>
+                <br>
+                <h3>Intro</h3>
+                <p>
+                    U-substitution, also called the Reverse Chain Rule or simply Integration by Substitution, is a method to find the integral for certain integrals that may prove tricky to solve with other methods. The most important step in u-substitution is determining if it's even possible to do in the first place. For this method to work your integral must be in the form of <math display="block"><mo>&#x222B</mo><mi>f</mi><mo>(</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>)</mo><mo>&#x22C5</mo><mi>g</mi><mi>'</mi><mo>(</mo><mi>x</mi><mo>)</mo><mi>d</mi><mi>x</mi></math>
+                </p>
+                <br>
+                <h3>Method</h3>
+                <p>
+                    Now that you've determined u-substitution is possible, we can perform the substitution part. First, substitute <math><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo></math> with <math><mi>u</mi></math>. Then, substitute <math><mi>g</mi><mi>'</mi><mo>(</mo><mi>x</mi><mo>)</mo><mi>d</mi><mi>x</mi></math> with <math><mi>d</mi><mi>u</mi></math> like this <math display="block"><mo>&#x222B</mo><mi>f</mi><mo>(</mo><mi class="purple">g</mi><mo class="purple">(</mo><mi class="purple">x</mi><mo class="purple">)</mo><mo>)</mo><mo>&#x22C5</mo><mi class="crimson">g</mi><mi class="crimson">'</mi><mo class="crimson">(</mo><mi class="crimson">x</mi><mo class="crimson">)</mo><mi class="crimson">d</mi><mi class="crimson">x</mi><mo>&#x2192</mo><mo>&#x222B</mo><mi>f</mi><mo>(</mo><mi class="purple">u</mi><mo>)</mo><mi class="crimson">d</mi><mi class="crimson">u</mi></math> Now you can integrate like normal. After that, simply replace the original terms to arrive at your answer.
+                </p>
+                <br>
+                <h3>Example</h3>
+                <p>
+                    Let's go through an example, say we have the following integral <math display="block"><mo>&#x222B</mo><mi>c</mi><mi>o</mi><mi>s</mi><mo>(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>)</mo><mn>2</mn><mi>x</mi><mi>d</mi><mi>x</mi></math> We can see that the derivative of the function inside of the cosine is equal to the term <math><mn>2</mn><mi>x</mi></math> on the outside. That means we can use u-substition. <math display="block"><mo>&#x222B</mo><mi>c</mi><mi>o</mi><mi>s</mi><mo>(</mo><msup class="purple"><mi>x</mi><mn>2</mn></msup><mo>)</mo><mn class="crimson">2</mn><mi class="crimson">x</mi><mi class="crimson">d</mi><mi class="crimson">x</mi><mo>&#x2192</mo><mo>&#x222B</mo><mi>c</mi><mi>o</mi><mi>s</mi><mo>(</mo><mi class="purple">u</mi><mo>)</mo><mi class="crimson">d</mi><mi class="crimson">u</mi></math> Now we can solve the integral like normal <math display="block"><mo>&#x222B</mo><mi>c</mi><mi>o</mi><mi>s</mi><mo>(</mo><mi>u</mi><mo>)</mo><mi>d</mi><mi>u</mi><mo>=</mo><mi>s</mi><mi>i</mi><mi>n</mi><mo>(</mo><mi>u</mi><mo>)</mo><mo>+</mo><mi>C</mi></math> And finally we put back our <math><mi>u</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></math> back in to get our answer of <math display="block"><mi>s</mi><mi>i</mi><mi>n</mi><mo>(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>)</mo><mo>+</mo><mi>C</mi></math>
+                </p>
+                <br>
+                <h3>Addendum</h3>
+                <p>
+                    Sometimes your integrals won't work out all nice like that. That's no problem though! Oftentimes you can rearrange terms or apply different rules of integration in order to get the form you want and then solve for u-substition. Just make sure you account for all the numbers and don't forget anything!
+                </p>
+                <br>
+            </article>
+            <br>
+        </main>
+        <footer>
+            <hr class="divider-footer">
+            <div class="container text-center">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-4">
+                        <img src="/assets/logo.png" height="75px">
+                        <h5 class="ps-3" style="display: inline-block;"><a href="https://github.com/Yeetmun/web-design-midterm" style="color: crimson; text-decoration-line: none;">Source Code</a></h5>
+                    </div>
+                    <div class="col-md-3">
+                        <figure class="sillycat">
+                            <img src="/assets/icon.webp" width="100px">
+                            <figcaption><strong>You like integrals don't you</strong></figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-5">
+                        <ul class="nav justify-content-center text-center" style="background-color: #D7E3FC">
+                            <li class="nav-item foot">Basics: <a href="/basics/indefinites.html">Indefinite</a> <a href="/basics/definites.html">Definite</a></li>
+                            <li class="nav-item foot">Methods: <a href="/methods/general.html">General</a> <a href="/methods/usub.html">U-sub</a> <a href="/methods/byparts.html">By Parts</a></li>
+                            <li class="nav-item foot">Identities: <a href="/identities/identities.html">Rational</a> <a href="/identities/trig.html">Trig</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

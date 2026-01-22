@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/css/definites.css">
+        <link rel="icon" href="/assets/icon.webp">
+        <script src="/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js" defer></script>
+        <script src="/assets/js/tex-mml-chtml.js" defer></script>
+        <title>Integrating Integrals</title>
+    </head>
+    <body>
+        <div class="to-top" onclick="scrollTo({top:0,left:0,behavior:'smooth'})">
+            <a href="#">Back to top</a>
+        </div>
+        <div class="nav" onclick="window.location.href='/index.html'">
+            <img src="/assets/logo.png" alt="Website Logo" style=" width: 100px; margin: 1rem">
+            <h1 style="display: inherit; transform: translateY(10px)">Integrating Integrals</h1>
+        </div>
+        <nav class="navbar navbar-expand-md sticky-top">
+            <div class="container-fluid">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" role="button" aria-expanded="false">
+                            Integral basics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/basics/indefinites.html">Indefinite Integrals</a></li>
+                            <li><a class="dropdown-item" href="/basics/definites.html">Definite Integrals</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" role="button" aria-expanded="false">
+                            Methods of Solving
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/methods/general.html">Integration Rules</a></li>
+                            <li><a class="dropdown-item" href="/methods/usub.html">U-substitution</a></li>
+                            <li><a class="dropdown-item" href="/methods/byparts.html">Integration by Parts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/identities/identities.html" id="more">
+                            Identities
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/moreinfo.html" id="more">
+                            More Resources
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <br><br>
+            <h1>Definite Integrals</h1>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Gc3QvUB0PkI?si=4dAz7sWEtDn10MkE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <article>
+                <br>
+                <h3>What's the difference?</h3>
+                <p>
+                    You've learned about the indefinite integral and now there's a definite integral, what's different? Well the definite integral is simply an integral over an interval instead of the entire fucntion, and it looks something like this <math display="block"><msubsup><mo>&#x222B</mo><mn>1</mn><mn>5</mn></msubsup><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mi>d</mi><mi>x</mi></math>The new numbers at the end of the integral indicate the interval that it's evaluating. In this case that would be the interval from <math><mi>x</mi><mo>=</mo><mn>1</mn></math> to <math><mi>x</mi><mo>=</mo><mn>5</mn></math>. There's also some special notation involved after you've solved for the antiderivative of the function to indicate which interval the should be solved for. <math display="block"><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><msubsup><mo>|</mo><mn>1</mn><mn>5</mn></msubsup></math>To completely solve the definite integral simply substitute the upper number as your variable and solve, repeat for the lower number, then subtract the lower result from the upper result.
+                </p>
+                <br>
+                <h3>Now what does it mean?</h3>
+                <p>
+                    Just like the indefinite integral, the definite integral also represents the area under a curve. However, this time we can actually find a value for that area instead of just getting a function that describes the area under the curve. Now we can actually find that area. Don't forget though, if a curve ends up going below the x-axis it will have negative area! That means you might get values that are smaller than what you expect depending on the situation. If you don't want this then you'll have to calculate each area above the x-axis and each area below the x-axis separately and then combine them. 
+                </p>
+                <br>
+            </article>
+            <br>
+            <hr class="w-75 divider-main">
+            <p class="mx-auto" style="width: 50%;">"<a href="https://www.youtube.com/watch?v=Gc3QvUB0PkI">Definite Integral</a>" by <a href="https://www.youtube.com/@TheOrganicChemistryTutor">The Organic Chemistry Tutor</a> is used under Fair use<br>Copyright Disclaimer Under Section 107 of the Copyright Act of 1976; Allowance is made for "Fair Use" for purposes such as criticism, comment, news reporting, teaching, scholarship, and research.<br>All rights and credit go directly to its rightful owners. No copyright infringement intended.</p>
+            <br>
+        </main>
+        <footer>
+            <hr class="divider-footer">
+            <div class="container text-center">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-4">
+                        <img src="/assets/logo.png" height="75px">
+                        <h5 class="ps-3" style="display: inline-block;"><a href="https://github.com/Yeetmun/web-design-midterm" style="color: crimson; text-decoration-line: none;">Source Code</a></h5>
+                    </div>
+                    <div class="col-md-3">
+                        <figure class="sillycat">
+                            <img src="/assets/icon.webp" width="100px">
+                            <figcaption><strong>You like integrals don't you</strong></figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-5">
+                        <ul class="nav justify-content-center text-center" style="background-color: #D7E3FC">
+                            <li class="nav-item foot">Basics: <a href="/basics/indefinites.html">Indefinite</a> <a href="/basics/definites.html">Definite</a></li>
+                            <li class="nav-item foot">Methods: <a href="/methods/general.html">General</a> <a href="/methods/usub.html">U-sub</a> <a href="/methods/byparts.html">By Parts</a></li>
+                            <li class="nav-item foot">Identities: <a href="/identities/identities.html">Rational</a> <a href="/identities/trig.html">Trig</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

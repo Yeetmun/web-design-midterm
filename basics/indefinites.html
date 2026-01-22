@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/css/indefinites.css">
+        <link rel="icon" href="/assets/icon.webp">
+        <script src="/assets/js/indefinites.js" defer></script>
+        <script src="/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js" defer></script>
+        <script src="/assets/js/tex-mml-chtml.js" defer></script>
+        <title>Integrating Integrals</title>
+    </head>
+    <body>
+        <div class="to-top" onclick="scrollTo({top:0,left:0,behavior:'smooth'})">
+            <a href="#">Back to top</a>
+        </div>
+        <div class="nav" onclick="window.location.href='/index.html'">
+            <img src="/assets/logo.png" alt="Website Logo" style=" width: 100px; margin: 1rem">
+            <h1 style="display: inherit; transform: translateY(10px)">Integrating Integrals</h1>
+        </div>
+        <nav class="navbar navbar-expand-md sticky-top">
+            <div class="container-fluid">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" role="button" aria-expanded="false">
+                            Integral basics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/basics/indefinites.html">Indefinite Integrals</a></li>
+                            <li><a class="dropdown-item" href="/basics/definites.html">Definite Integrals</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" role="button" aria-expanded="false">
+                            Methods of Solving
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/methods/general.html">Integration Rules</a></li>
+                            <li><a class="dropdown-item" href="/methods/usub.html">U-substitution</a></li>
+                            <li><a class="dropdown-item" href="/methods/byparts.html">Integration by Parts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/identities/identities.html" id="more">
+                            Identities
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/moreinfo.html" id="more">
+                            More Resources
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <br><br>
+            <h1>Indefinite Integrals</h1>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MMv-027KEqU?si=RGOtUiNV6upLlTRV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="attribute">"<a href="https://www.youtube.com/watch?v=MMv-027KEqU">Antiderivatives and indefinite integrals | AP Calculus AB | Khan Academy</a>" by <a href="https://www.khanacademy.org/">Khan Academy</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA</a></p>
+            <article>
+                <h3>What is an integral?</h3>
+                <p>You've (hopefully) already learned all about derivatives. Integrals are simply derivatives in reverse, or an antiderivative just like how subtraction is basically additions but in reverse. Another way to think about is is by asking "If a function's derivative is this, what is the original function?" This is very handy if you say, wanted to find the velocity function of something but only have the acceleration function. Since acceleration is just the derivative of velocity, if we take the antiderivative, or integral, of acceleration then we end up with velocity.<br><br>But you do you write the integral? To do that you use the symbol <math display="block"><mo>&#x222B</mo></math> to denote the start of an integral. You then insert the function you want to be integrated such as <math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></math> after the integral symbol. Finally, you need to add <math><mi>d</mi><mi>x</mi></math> in order to complete the integral. Be careful though, it doesn't necessarily have to be <math><mi>d</mi><mi>x</mi></math>, it can be any variable but is usually the variable used in your function. 
+                </p>
+                <br>
+                <h3>Solving Integrals</h3>
+                <p>
+                    Now that you've learned what integrals are, let's solve a simple practice problem. Take the function <math><mn>2</mn><mi>x</mi></math> for example, and we want to find the integral, or antiderivative, of it. Using our symbols from earlier, that would look something like this <math display="block"><mo>&#x222B</mo><mn>2</mn><mi>x</mi><mi>d</mi><mi>x</mi></math>Remember, we're solving for something that, when we apply the derivative, results in 2x. Obviously that means the answer is <math><msup><mi>x</mi><mn>2</mn></msup></math>, but there's one more thing we have to add, and that's a <math><mo>+</mo><mi>C</mi></math>. This is because derivatives eliminate any constants so we can't know if there was a constant before or not after integrating. As such we have to add a constant to represent all these possible values.
+                </p>
+                <br>
+                <h3>What does it mean?</h3>
+                <p>
+                    What does the integral represent in the real world? That's quite simple, it simply represents the area of a curve or function between that function or curve and the x-axis. This property can lead to many useful applications in physics, engineering, medicine, economics, and more. One such example could be determing the volume of a shape that's complex to measure but has an easily modelable surface. 
+                </p>
+                <br>
+            </article>
+            <br>
+        </main>
+        <footer>
+            <hr class="divider-footer">
+            <div class="container text-center">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-4">
+                        <img src="/assets/logo.png" height="75px">
+                        <h5 class="ps-3" style="display: inline-block;"><a href="https://github.com/Yeetmun/web-design-midterm" style="color: crimson; text-decoration-line: none;">Source Code</a></h5>
+                    </div>
+                    <div class="col-md-3">
+                        <figure class="sillycat">
+                            <img src="/assets/icon.webp" width="100px">
+                            <figcaption><strong>You like integrals don't you</strong></figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-5">
+                        <ul class="nav justify-content-center text-center" style="background-color: #D7E3FC">
+                            <li class="nav-item foot">Basics: <a href="/basics/indefinites.html">Indefinite</a> <a href="/basics/definites.html">Definite</a></li>
+                            <li class="nav-item foot">Methods: <a href="/methods/general.html">General</a> <a href="/methods/usub.html">U-sub</a> <a href="/methods/byparts.html">By Parts</a></li>
+                            <li class="nav-item foot">Identities: <a href="/identities/identities.html">Rational</a> <a href="/identities/trig.html">Trig</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

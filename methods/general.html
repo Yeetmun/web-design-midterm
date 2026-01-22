@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/css/general.css">
+        <link rel="icon" href="/assets/icon.webp">
+        <script src="/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js" defer></script>
+        <script src="/assets/js/tex-mml-chtml.js" defer></script>
+        <title>Integrating Integrals</title>
+    </head>
+    <body>
+        <div class="to-top" onclick="scrollTo({top:0,left:0,behavior:'smooth'})">
+            <a href="#">Back to top</a>
+        </div>
+        <div class="nav" onclick="window.location.href='/index.html'">
+            <img src="/assets/logo.png" alt="Website Logo" style=" width: 100px; margin: 1rem">
+            <h1 style="display: inherit; transform: translateY(10px)">Integrating Integrals</h1>
+        </div>
+        <nav class="navbar navbar-expand-md sticky-top">
+            <div class="container-fluid">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" role="button" aria-expanded="false">
+                            Integral basics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/basics/indefinites.html">Indefinite Integrals</a></li>
+                            <li><a class="dropdown-item" href="/basics/definites.html">Definite Integrals</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" role="button" aria-expanded="false">
+                            Methods of Solving
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/methods/general.html">Integration Rules</a></li>
+                            <li><a class="dropdown-item" href="/methods/usub.html">U-substitution</a></li>
+                            <li><a class="dropdown-item" href="/methods/byparts.html">Integration by Parts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/identities/identities.html" id="more">
+                            Identities
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/moreinfo.html" id="more">
+                            More Resources
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <br><br>
+            <h1>General Solving Methods</h1>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NmfRQUZGoHI?si=OuHb6TH6KyInT2tJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <article>
+                <br>
+                <h3>What's this all about?</h3>
+                <p>
+                    There are many different integral problems that need different methods to be solved. Of course, with computers now it is easy to solve them but it's useful to know how to do it by hand too. There are many different basic rules for integrating that can make things a lot easier when trying to solve integrals.
+                </p>
+                <br>
+                <h3>Constant Rule</h3>
+                <p>
+                    A simple rule that states: The indefinite integral for any constant k is simply k times the variable of integration. That is: <math display="block"><mo>&#x222B</mo><mi>k</mi><mi>d</mi><mi>x</mi><mo>=</mo><mi>k</mi><mi>x</mi></math>
+                </p>
+                <br>
+                <h3>Power Rule</h3>
+                <p>
+                    A rule that is almost always useful since exponents are so common in integrals. It states that: The definite integral of any variable rasied to a power n where n does not equal 1 is equal to the variable raised to the n+1th power over n+1. That is: <math display="block"><mo>&#x222B</mo><msup><mi>x</mi><mi>n</mi></msup><mi>d</mi><mi>x</mi><mo>=</mo><mfrac><msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>+</mo><mi>C</mi></math>
+                </p>
+                <br>
+                <h3>Constant Multiple Rule</h3>
+                <p>In a derivative, any constants being multiplied with a variable can be brought out and multiplied after solving the derivative. Similarly, any constants being multiplied with a variable or function in an integral can be brought outside of the integral. That is: <math display="block"><mo>&#x222B</mo><mi>k</mi><mo>&#x22C5</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mi>d</mi><mi>x</mi><mo>=</mo><mi>k</mi><mo>&#x222B</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mi>d</mi><mi>x</mi></math>
+                </p>
+                <br>
+                <h3>Sum or Difference Rule</h3>
+                <p>
+                    If there is a sum or difference in an integral, it is equal to the sum or difference of the integrals of each term individually. That is: <math display="block"><mo>&#x222B</mo><mo>[</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>+</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>]</mo><mi>d</mi><mi>x</mi><mo>=</mo><mo>&#x222B</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mi>d</mi><mi>x</mi><mo>+</mo><mo>&#x222B</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mi>d</mi><mi>x</mi></math>
+                </p>
+                <hr class="w-75 divider-main">
+                <p>These are the most common and basic methods available to solve integrals. However, they most certainly aren't the only methods available. There are plenty of other methods available for solving more complex integrals. Two of such methods, u-substitution and integration by parts, are available on other pages of this site to learn from.</p>
+            </article>
+            <br>
+            <hr class="w-75 divider-main">
+            <p class="mx-auto" style="width: 50%;">"<a href="https://www.youtube.com/watch?v=NmfRQUZGoHI">Top 10 INTEGRATION Rules and Methods (ultimate study guide)</a>" by <a href="https://www.youtube.com/@MrJensenMath10">JensenMath</a> is used under Fair use<br>Copyright Disclaimer Under Section 107 of the Copyright Act of 1976; Allowance is made for "Fair Use" for purposes such as criticism, comment, news reporting, teaching, scholarship, and research.<br>All rights and credit go directly to its rightful owners. No copyright infringement intended.</p>
+            <br>
+        </main>
+        <footer>
+            <hr class="divider-footer">
+            <div class="container text-center">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-4">
+                        <img src="/assets/logo.png" height="75px">
+                        <h5 class="ps-3" style="display: inline-block;"><a href="https://github.com/Yeetmun/web-design-midterm" style="color: crimson; text-decoration-line: none;">Source Code</a></h5>
+                    </div>
+                    <div class="col-md-3">
+                        <figure class="sillycat">
+                            <img src="/assets/icon.webp" width="100px">
+                            <figcaption><strong>You like integrals don't you</strong></figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-5">
+                        <ul class="nav justify-content-center text-center" style="background-color: #D7E3FC">
+                            <li class="nav-item foot">Basics: <a href="/basics/indefinites.html">Indefinite</a> <a href="/basics/definites.html">Definite</a></li>
+                            <li class="nav-item foot">Methods: <a href="/methods/general.html">General</a> <a href="/methods/usub.html">U-sub</a> <a href="/methods/byparts.html">By Parts</a></li>
+                            <li class="nav-item foot">Identities: <a href="/identities/identities.html">Rational</a> <a href="/identities/trig.html">Trig</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
